@@ -90,9 +90,17 @@ p {
 
 /*------------------ Hero box ------------------*/
 .hero-box {
+  display: flex;
   height: 600px;
   background: #2f303a;
   padding-top: 200px;
+  background-image: url("/img/hero-baner.jpg");
+  background-repeat: no-repeat;
+}
+
+
+.hero-baner{
+  
 }
 
 /*------------------ Work box ------------------*/
@@ -104,12 +112,14 @@ p {
   margin: 0px;
   padding-top: 94px;
   padding-bottom: 94px;
+  
 
   /*outline: 1px solid green;*/
 }
 
 .work-box-foto{
   padding-top: 94px;
+  
 }
 
 
