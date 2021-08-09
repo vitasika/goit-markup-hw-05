@@ -96,12 +96,11 @@ p {
   padding-top: 200px;
   background-image: url("/img/hero-baner.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
-.hero-baner{
-  
-}
+
 
 /*------------------ Work box ------------------*/
 
