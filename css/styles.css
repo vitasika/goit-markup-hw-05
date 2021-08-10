@@ -52,6 +52,31 @@ p {
 
 /*------------------ Header box ------------------*/
 
+.contakt-head-mail::before{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  /* background-color: blue; */
+  content: "";
+  background-image: url(/img/svgsprite/mail.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+.contakt-head-tel::before{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  /* background-color: red; */
+  content: "";
+  background-image: url(/img/svgsprite/phone.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -94,12 +119,21 @@ p {
   height: 600px;
   background: #2f303a;
   padding-top: 200px;
-  background-image: url("/img/hero-baner.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+
+ 
 }
 
-
+.overlay{
+  max-width: 1600px;
+  height: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)), url("/img/baner-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
 
 
 /*------------------ Work box ------------------*/
@@ -117,9 +151,48 @@ p {
 }
 
 .work-box-foto{
-  padding-top: 94px;
-  
+  padding-top: 94px;  
 }
+
+.work-text::before{
+  display: block;
+  content: "";
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.icon-radar::before{
+  background-image: url("/img/svgsprite/antenna.svg"); 
+}
+.icon-clock::before{
+  background-image: url("/img/svgsprite/clock.svg"); 
+}
+.icon-diagram::before{
+  background-image: url("/img/svgsprite/diagram.svg"); 
+}
+.icon-astronaut::before{
+  background-image: url("/img/svgsprite/astronaut.svg"); 
+}
+
+/* .work-text:nth-child(1)::before{
+  background-image: url(/img/svgsprite/antenna.svg);
+}
+.work-text:nth-child(2)::before{
+  background-image: url(/img/svgsprite/clock.svg);
+}
+
+.work-text:nth-child(3)::before{
+  background-image: url(/img/svgsprite/diagram.svg);
+}
+
+.work-text:nth-child(4)::before{
+  background-image: url(/img/svgsprite/astronaut.svg);
+} */
 
 
 /*------------------ Team box ------------------*/
@@ -206,8 +279,9 @@ p {
 }
 
 /*------------------ contakt header ------------------*/
-.contakt-head {
-  display: block;
+.contakt-head-mail, .contakt-head-tel {
+  display: flex;
+  height: 80px;
 
   color: var(--p-text-color);
   font-family: Roboto;
@@ -222,11 +296,15 @@ p {
   padding-bottom: 32px;
 }
 
-.contakt-head:hover,
-.contakt-head:focus {
+.contakt-head-mail:hover,
+.contakt-head-mail:focus {
   color: var(--second-text-color);
 }
 
+.contakt-head-tel:hover,
+.contakt-head-tel:focus {
+  color: var(--second-text-color);
+}
 /*------------------ contakt footer ------------------*/
 
 .contakt-footer-addres-color,
@@ -301,18 +379,10 @@ p {
   display: none;
 }
 
-/*.work-list {
-  display: flex;  
-  flex-wrap: wrap;
-}*/
-
 .section-work {
   display: flex;
   width: 1170px;
   height: 100px;
-
-  /*margin-top: 94px;
-  margin-bottom: 94px;*/
 }
 
 .work-text{  
@@ -433,6 +503,23 @@ p.section-p-team-text {
 .manager-text {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.icon-insta{
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-image: url(/img/svgsprite/instagram.svg);
+  background-size: 20px;
+  background-color: var(--background-comand-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.icon-insta:hover{
+  background-color: var(--second-text-color);
+  color: var(--background-head-color);
 }
 
 /*------------------ portfolio page ------------------*/
