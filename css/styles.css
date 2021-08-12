@@ -471,13 +471,13 @@ p.section-p-team-text {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--p-text-color);
+  padding-bottom: 16px;
 
   /*outline: 1px solid green;*/
 }
 
 .manager-box {
   width: 270px;
-  height: 368px;
 }
 
 .team-line {
@@ -505,11 +505,11 @@ p.section-p-team-text {
   padding-bottom: 30px;
 }
 
-.icon-insta{
+.icon-team{
   display: inline-block;
   height: 44px;
   width: 44px;
-  background-image: url(/img/svgsprite/instagram.svg);
+  
   background-size: 20px;
   background-color: var(--background-comand-color);
   background-repeat: no-repeat;
@@ -517,10 +517,87 @@ p.section-p-team-text {
   border-radius: 50%;
 }
 
-.icon-insta:hover{
+/* .icon-team:hover, .icon-team:focus{
   background-color: var(--second-text-color);
-  color: var(--background-head-color);
 }
+
+.instagram{
+  background-image: url(/img/svgsprite/instagram.svg);
+}
+
+.twitter{
+  background-image: url(/img/svgsprite/twitter.svg);
+}
+
+.facebook{
+  background-image: url(/img/svgsprite/facebook.svg);
+}
+
+.linkedin{
+  background-image: url(/img/svgsprite/linkedin.svg);
+} */
+
+.card-position{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/*------------------ проба кнопок ------------------*/
+
+.btn-icon {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-color: var(--second-text-logo-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-icon-card {
+  height: 20px;
+  width: 20px;
+  fill: #AFB1B8;    
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+  background-color: var(--second-text-color);
+  cursor: pointer;
+}
+
+.btn-icon:hover svg,
+.btn-icon:focus svg {
+  fill: var(--second-text-logo-color);
+}
+
+/* .btn-icon:hover, 
+.btn-icon-card:hover {
+  background-color: var(--second-text-color);
+  cursor: pointer;
+}
+
+.btn-icon:hover svg, 
+.btn-icon-card:hover svg {
+  fill: var(--second-text-logo-color);
+}
+
+.btn-icon:focus, 
+.btn-icon-card:focus {
+  background-color: var(--second-text-color);
+}
+
+.btn-icon:focus svg, 
+.btn-icon-card:focus svg {
+  fill: var(--second-text-logo-color);
+  cursor: pointer;
+} */
+
 
 /*------------------ portfolio page ------------------*/
 
