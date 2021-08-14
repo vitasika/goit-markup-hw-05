@@ -103,11 +103,11 @@ p {
   height: 600px; 
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)), url("/img/baner-hero.jpg");
+  background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)), 
+  url("../img/baner-hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  
+  background-size: cover;  
 }
 
 
@@ -208,9 +208,6 @@ p {
 .logo {
   color: var(--second-text-color);
   text-decoration: none;
-
-  /*outline: 1px solid rgb(245, 8, 8);
-  background-color: rgb(255, 251, 0);*/
 }
 
 .logo-end-head {
@@ -224,16 +221,10 @@ p {
   display: flex;
   color: var(--second-text-color);
   text-decoration: none;
-  
-
-  /*outline: 1px solid rgb(245, 8, 8);
-  background-color: rgb(255, 251, 0);*/
 }
 
 .logo-end-footer {
   color: var(--second-text-logo-color);
-
-  /*outline: 1px solid green;*/
 }
 
 .footer-block-position{
