@@ -58,7 +58,7 @@ p {
   margin-right: 10px;
   /* background-color: blue; */
   content: "";
-  background-image: url(/img/svgsprite/mail.svg);
+  background-image: url(/img/mail.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -71,7 +71,7 @@ p {
   margin-right: 10px;
   /* background-color: red; */
   content: "";
-  background-image: url(/img/svgsprite/phone.svg);
+  background-image: url(/img/phone.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -167,16 +167,16 @@ p {
 }
 
 .icon-radar::before{
-  background-image: url("/img/svgsprite/antenna.svg"); 
+  background-image: url("/img/antenna.svg"); 
 }
 .icon-clock::before{
-  background-image: url("/img/svgsprite/clock.svg"); 
+  background-image: url("/img/clock.svg"); 
 }
 .icon-diagram::before{
-  background-image: url("/img/svgsprite/diagram.svg"); 
+  background-image: url("/img/diagram.svg"); 
 }
 .icon-astronaut::before{
-  background-image: url("/img/svgsprite/astronaut.svg"); 
+  background-image: url("/img/astronaut.svg"); 
 }
 
 /* .work-text:nth-child(1)::before{
@@ -199,7 +199,6 @@ p {
 .team-box {
   padding-top: 94px;
   padding-bottom: 94px;
-
   background: var(--background-comand-color);
 }
 
@@ -298,7 +297,7 @@ p {
 
 .contakt-head-mail:hover,
 .contakt-head-mail:focus {
-  color: var(--second-text-color);
+  color: var(--second-text-color);  
 }
 
 .contakt-head-tel:hover,
@@ -545,6 +544,54 @@ p.section-p-team-text {
   padding-right: 32px;
 }
 
+/*------------------ постоянные клиенты ------------------*/
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: var(--background-comand-color);
+}
+
+.client-link{
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px; 
+  background-color: var(--background-head-color);
+}
+
+.client-btn-link{  
+  width: 106px;
+  height: 60px;
+  display: flex;
+  align-self: center;
+  fill: #AFB1B8;
+;
+}
+
+.client-block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--second-text-color);
+  cursor: pointer;
+}
+
+.client-link:hover svg,
+.client-link:focus svg {
+  fill: var(--second-text-color);
+}
+
+.team-box + .clients{
+  background: var(--background-head-color);
+}
+
 /*------------------ проба кнопок ------------------*/
 
 .btn-icon {
@@ -708,3 +755,5 @@ p.section-p-text-port {
 .card-text-portfolio {
   padding: 20px 25px;
 }
+
+
