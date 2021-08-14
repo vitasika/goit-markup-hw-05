@@ -150,6 +150,12 @@ p {
   /*outline: 1px solid green;*/
 }
 
+.work-box-first{
+  width: 1170px;
+  height: 251px;
+
+}
+
 .work-box-foto{
   padding-top: 94px;  
 }
@@ -253,6 +259,64 @@ p {
   color: var(--second-text-logo-color);
 
   /*outline: 1px solid green;*/
+}
+
+.footer-block-position{
+  display: flex;
+}
+
+
+.footer-first-block{
+  display: inline-block;
+}
+
+.footer-second-block{  
+  padding-left: 70px;
+  padding-top: 12px;
+  color: var(--second-text-logo-color);
+}
+
+.footer-join-text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-join{
+  width: 206px;
+  height: 80px;
+}
+
+
+
+
+.footer-join-link{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.footer-btn-icon {
+  height: 20px;
+  width: 20px;
+  fill: #FFFFFF;
+}
+
+.footer-btn-join{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-btn-join:hover,
+.footer-btn-join:focus {
+  background-color: var(--second-text-color);  
+  cursor: pointer;
 }
 
 /*------------------ button navi header ------------------*/
@@ -604,6 +668,7 @@ p.section-p-team-text {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  
 }
 
 .btn-icon-card {
@@ -622,29 +687,6 @@ p.section-p-team-text {
 .btn-icon:focus svg {
   fill: var(--second-text-logo-color);
 }
-
-/* .btn-icon:hover, 
-.btn-icon-card:hover {
-  background-color: var(--second-text-color);
-  cursor: pointer;
-}
-
-.btn-icon:hover svg, 
-.btn-icon-card:hover svg {
-  fill: var(--second-text-logo-color);
-}
-
-.btn-icon:focus, 
-.btn-icon-card:focus {
-  background-color: var(--second-text-color);
-}
-
-.btn-icon:focus svg, 
-.btn-icon-card:focus svg {
-  fill: var(--second-text-logo-color);
-  cursor: pointer;
-} */
-
 
 /*------------------ portfolio page ------------------*/
 
