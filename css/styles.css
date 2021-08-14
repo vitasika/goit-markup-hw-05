@@ -52,31 +52,6 @@ p {
 
 /*------------------ Header box ------------------*/
 
-.contakt-head-mail::before{
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  /* background-color: blue; */
-  content: "";
-  background-image: url(/img/mail.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  
-}
-
-.contakt-head-tel::before{
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  /* background-color: red; */
-  content: "";
-  background-image: url(/img/phone.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -345,29 +320,56 @@ p {
 .contakt-head-mail, .contakt-head-tel {
   display: flex;
   height: 80px;
-
   color: var(--p-text-color);
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  /*outline: 1px solid green;*/
-
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .contakt-head-mail:hover,
 .contakt-head-mail:focus {
-  color: var(--second-text-color);  
+  color: var(--second-text-color);
 }
+
 
 .contakt-head-tel:hover,
 .contakt-head-tel:focus {
   color: var(--second-text-color);
 }
+
+.contakt-head-mail:hover .header-mail,
+.contakt-head-tel:hover .header-phone {
+  fill: var(--second-text-color);
+}
+
+.contakt-head-mail:focus .header-mail,
+.contakt-head-tel:focus .header-phone {
+  fill: var(--second-text-color);
+}
+
+/* .contakt-head-tel:hover .header-phone {
+  fill: var(--second-text-color);
+} */
+
+.header-mail{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--p-text-color);
+}
+
+.header-phone{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--p-text-color);
+}
+
+
 /*------------------ contakt footer ------------------*/
 
 .contakt-footer-addres-color,
@@ -580,26 +582,6 @@ p.section-p-team-text {
   border-radius: 50%;
 }
 
-/* .icon-team:hover, .icon-team:focus{
-  background-color: var(--second-text-color);
-}
-
-.instagram{
-  background-image: url(/img/svgsprite/instagram.svg);
-}
-
-.twitter{
-  background-image: url(/img/svgsprite/twitter.svg);
-}
-
-.facebook{
-  background-image: url(/img/svgsprite/facebook.svg);
-}
-
-.linkedin{
-  background-image: url(/img/svgsprite/linkedin.svg);
-} */
-
 .card-position{
   display: flex;
   justify-content: space-evenly;
@@ -743,7 +725,6 @@ p.section-p-team-text {
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 /*------------------ my projects ------------------*/
@@ -797,5 +778,28 @@ p.section-p-text-port {
 .card-text-portfolio {
   padding: 20px 25px;
 }
+
+.project-item:hover,
+.project-item:focus{
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
