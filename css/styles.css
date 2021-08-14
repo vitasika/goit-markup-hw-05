@@ -351,10 +351,6 @@ p {
   fill: var(--second-text-color);
 }
 
-/* .contakt-head-tel:hover .header-phone {
-  fill: var(--second-text-color);
-} */
-
 .header-mail{
   width: 16px;
   height: 16px;
