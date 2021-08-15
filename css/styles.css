@@ -147,34 +147,18 @@ p {
   margin-bottom: 30px;
 }
 
-.icon-radar::before{
+.icon-radar::before {
   background-image: url("../img/antenna.svg"); 
 }
-.icon-clock::before{
+.icon-clock::before {
   background-image: url("../img/clock.svg"); 
 }
-.icon-diagram::before{
+.icon-diagram::before {
   background-image: url("../img/diagram.svg"); 
 }
-.icon-astronaut::before{
+.icon-astronaut::before {
   background-image: url("../img/astronaut.svg"); 
 }
-
-/* .work-text:nth-child(1)::before{
-  background-image: url(/img/svgsprite/antenna.svg);
-}
-.work-text:nth-child(2)::before{
-  background-image: url(/img/svgsprite/clock.svg);
-}
-
-.work-text:nth-child(3)::before{
-  background-image: url(/img/svgsprite/diagram.svg);
-}
-
-.work-text:nth-child(4)::before{
-  background-image: url(/img/svgsprite/astronaut.svg);
-} */
-
 
 /*------------------ Team box ------------------*/
 .team-box {
