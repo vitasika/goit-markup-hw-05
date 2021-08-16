@@ -132,12 +132,13 @@ p {
 }
 
 .work-box-foto{
-  padding-top: 94px;  
+  padding-bottom: 94px;  
 }
 
 .work-text::before{
   display: block;
   content: "";
+  width: 270px;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;  
@@ -149,15 +150,21 @@ p {
 
 .icon-radar::before {
   background-image: url("../img/antenna.svg"); 
+  background-size: 70px 70px;
 }
+
 .icon-clock::before {
-  background-image: url("../img/clock.svg"); 
+  background-image: url("../img/clock.svg");
+  background-size: 70px 70px; 
 }
 .icon-diagram::before {
-  background-image: url("../img/diagram.svg"); 
+  background-image: url("../img/diagram.svg");
+  background-size: 70px 70px; 
 }
+
 .icon-astronaut::before {
-  background-image: url("../img/astronaut.svg"); 
+  background-image: url("../img/astronaut.svg");
+  background-size: 70px 70px; 
 }
 
 /*------------------ Team box ------------------*/
@@ -230,7 +237,8 @@ p {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .footer-join{
@@ -423,6 +431,7 @@ p {
 
 .work-text{  
   width: 270px;
+  height: 120px;
 }
 
 .section-work .work-text:not(:last-child) {
@@ -554,8 +563,8 @@ p.section-p-team-text {
 }
 
 .card-position{
-  display: flex;
-  justify-content: space-evenly;
+  display: flex;  
+  justify-content: space-between;  
   align-items: center;
   padding-left: 32px;
   padding-right: 32px;
