@@ -476,7 +476,7 @@ h2.section-title-work {
 .work-btn{
   display: flex;
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
   left: 0px;
   width: 370px;
   height: 70px;
