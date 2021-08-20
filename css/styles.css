@@ -276,20 +276,51 @@ height: auto;
 /*------------------ button navi header ------------------*/
 
 .site-navi-link {
-  color: var(--primary-text-color);
+  position: relative;
+  display: block;
+  
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: currentColor;
+
+
 }
 
 .site-navi-link:hover,
 .site-navi-link:focus {
   color: var(--second-text-color);
+}
+
+
+.site-navi-link::after {
+  content: "";
+
+  position: absolute;  
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--second-text-color);
+
+  display: none;
+
+}
+
+
+.site-navi-link:hover::after {
+  display: block;
+
 }
 
 /*------------------ contakt header ------------------*/
@@ -828,6 +859,9 @@ p.section-p-text-port {
   min-height: 581px;
   background-color: var(--background-head-color);
 }
+
+
+
 
 
 
