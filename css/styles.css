@@ -879,6 +879,48 @@ p.section-p-text-port {
 
 
 
+/*------------------ modal window button ------------------*/
+
+.btn-modal-closed{
+
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-image: url("../img/closed.svg");
+  background-size: 11px 11px; 
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  cursor: pointer;
+}
+
+.btn-modal-closed:hover,
+.btn-modal-closed:focus{
+  border: 1px solid black;
+}
+
+  
+  
+  
+  
+  
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+
 
 
 
