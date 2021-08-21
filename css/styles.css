@@ -317,14 +317,13 @@ height: auto;
   opacity: 1;
 } */
 
-.nav-item{
-  position: relative;
-  
-}
+/* .nav-item{
+  position: relative;  
+} */
 
-.current{
+/* .current{
   color: var(--second-text-color);
-}
+} */
 
 .current::after{  
   content: "";
@@ -341,6 +340,7 @@ height: auto;
 }
 
 /*------------------ contakt header ------------------*/
+
 .contakt-head-mail, .contakt-head-tel {
   display: flex;
   height: 80px;
@@ -907,4 +907,12 @@ p.section-p-text-port {
 .btn-modal-closed:hover,
 .btn-modal-closed:focus{
   border: 1px solid black;
+}
+
+
+.fill-wind{
+  text-align: center;
+  padding: 150px;
+  
+  
 }
